@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-launch-args-issue",
-    "slug": "expo-launch-args-issue",
+    "name": "customerio-expo-51",
+    "slug": "customerio-expo-51",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brandonshiftbase.customerioexpo51"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,10 +28,34 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "customerio-expo-plugin",
+        {
+          "ios": {
+            "pushNotification": {
+              "useRichPush": true,
+              "env": {
+                "siteId": "<siteId>",
+                "apiKey": "<apiKey>",
+                "region": "<region>"
+              }
+            }
+          }
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "221fbf95-15bb-41f1-a28c-74d338134918"
+      }
+    },
+    "owner": "brandonshiftbase"
   }
 }

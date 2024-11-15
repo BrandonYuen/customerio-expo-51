@@ -34,7 +34,7 @@
         {
           "ios": {
             "pushNotification": {
-              "useRichPush": true,
+              "useRichPush": false,
               "env": {
                 "siteId": "<siteId>",
                 "apiKey": "<apiKey>",

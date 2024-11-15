@@ -38,7 +38,7 @@
               "env": {
                 "siteId": "<siteId>",
                 "apiKey": "<apiKey>",
-                "region": "<region>"
+                "region": "eu"
               }
             }
           }
